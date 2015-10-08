@@ -18,7 +18,15 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    clearInput()
+  }
+  
+  func clearInput(){
+  daysLabel.text = "Enter Days Here"
+  daysText.text = ""
+  centsLabel.text = "Enter Cents Here"
+  centsText.text = ""
+  outputLabel.text = "Your pay will show up here"
   }
   
   override func didReceiveMemoryWarning() {
